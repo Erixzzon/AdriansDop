@@ -61,7 +61,7 @@
         <div v-else>
             <div class="row justify-content-md-center">
                 <div class="section response col-12">
-                    <form name="response" method="POST" data-netlify="true" class=" pt-5">
+                    <form name="response" method="POST" data-netlify="true" netlify class=" pt-5">
                         <input type="hidden" name="kod" v-model="code">
                         <div class="form-group col-4 mx-auto">
                             <label for="antal">Antal personer</label>

@@ -13,24 +13,11 @@
       <strong>We're sorry but this website doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
     <div id="app"></div>
-    <form name="svar" method="POST" data-netlify="true" netlify class="d-none">
-        <input type="hidden" name="kod" v-model="code">
-        <div class="form-group col-4 mx-auto">
-            <label for="antal">Antal personer</label>
-            <input type="number" class="form-control" id="antal" name="antal" min="0" max="10">
-        </div>
-        <div class="form-group form-check col-4 mx-auto">
-            <input type="checkbox" class="form-check-input" id="dop" name="dop">
-            <label class="form-check-label" for="dop">Vi kommer till dopet</label>
-        </div>
-        <div class="form-group form-check col-4 mx-auto">
-            <input type="checkbox" class="form-check-input" id="fika" name="fika">
-            <label class="form-check-label" for="fika">Vi kommer till fikat</label>
-        </div>
-        <div class="col-4 mx-auto">
-            <button type="submit" class="btn btn-outline-secondary btn-block" v-on:click="submit">Skicka</button>
-        </div>
-        <p v-if="submitted">Tack för ditt svar</p>
+    <form name="svar" netlify netlify-honeypot="bot-field">             
+        <input type="hidden" name="kod">
+        <input type="number" name="antal">
+        <input type="checkbox" name="dop">
+        <input type="checkbox" name="fika">
     </form>
   </body>
 </html>

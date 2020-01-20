@@ -43,7 +43,7 @@
                         När
                     </h2>
                     <p>
-                        Dopen börjar klockan 14:30
+                        Dopet börjar klockan 14:30
                     </p>                                      
                 </div>
             </div>

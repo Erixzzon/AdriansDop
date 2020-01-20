@@ -27,7 +27,7 @@
                 </div>
             </div>
             <div class="row justify-content-md-center">
-                <div class="section fifth col-12 py-5">
+                <div class="section fifth col-12">
                     <h2 class="">
                         Var
                     </h2>
@@ -35,22 +35,38 @@
                         Dopet äger rum i Österhaninge kyrka<br/>
                         <i>Klockarlötsvägen, 137 95 Österhaninge</i>
                     </p>                   
-                    <p>
-                        Fika bjuds på i Landfjärden<br/>
-                        <i>Vassvägen 8, 148 93 Ösmo</i>
-                    </p>
-                    
                 </div>
             </div>
             <div class="row justify-content-md-center">
                 <div class="section sixth col-12">
+                    <h2 class="">
+                        När
+                    </h2>
+                    <p>
+                        Dopen börjar klockan 14:30
+                    </p>                                      
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="section seventh col-12 pb-5">
+                    <h2 class="">
+                        Efteråt
+                    </h2>
+                    <p>
+                        Bjuds det på fika i Landfjärdem<br/>
+                        <i>Vassvägen 8, 148 93 Ösmo</i>
+                    </p>                                       
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="section eight col-12">
                     <h1 class="pt-5">
                         Hoppas du kan vara med
                     </h1>
-                    <h2>OSA senast 20 mars</h2>
+                    <h2>OSA senast 14 mars</h2>
                     <div class="form-group pb-5">
                         <div class="col-4 mx-auto">
-                            <input type="text" class="form-control" v-model="code">
+                            <input type="text" class="form-control" v-model="code" placeholder="Din kod">
                             <button class="btn btn-outline-secondary btn-block" v-on:click="submitCode">Svara</button>
                             <p v-if="error">Ogiltlig kod</p>
                         </div>
@@ -68,15 +84,15 @@
                             <label for="antal">Antal personer</label>
                             <input type="number" class="form-control" id="antal" name="antal" min="0" max="10">
                         </div>
-                        <div class="form-group form-check col-4 mx-auto">
+                        <div class="form-group form-check col-8 mx-auto">
+                            <input type="checkbox" class="form-check-input" id="dopochfika" name="dopochfika">
+                            <label class="form-check-label" for="dopochfika">Vi kommer till dopet och fikay</label>
+                        </div>
+                        <div class="form-group form-check col-8 mx-auto">
                             <input type="checkbox" class="form-check-input" id="dop" name="dop">
-                            <label class="form-check-label" for="dop">Vi kommer till dopet</label>
+                            <label class="form-check-label" for="dop">Vi bara till dopet</label>
                         </div>
-                        <div class="form-group form-check col-4 mx-auto">
-                            <input type="checkbox" class="form-check-input" id="fika" name="fika">
-                            <label class="form-check-label" for="fika">Vi kommer till fikat</label>
-                        </div>
-                        <div class="form-group form-check col-4 mx-auto">
+                        <div class="form-group form-check col-8 mx-auto">
                                 <input type="checkbox" class="form-check-input" id="inget" name="inget">
                                 <label class="form-check-label" for="inget">Tyvärr, vi kan inte komma</label>
                             </div>
@@ -96,7 +112,7 @@ export default {
     name: 'Start',
     data () {
         return {
-            inviteCodes: ['a9u7','3g7k','44nj','wd8p'],
+            inviteCodes: ['a9u7','3g7k','44nj','wd8p','h9u7', '4h9k', '49u3', 'rwq3', 'p902', 'hv6q', '65m4', '00gw', 'mkf7', 'x4ft', 'yt6n', 'af7j', '11bc', 'pz6b', 'vu48', 'rk22', '99y7', 'uu59', 'das7', 'hi8p', '87k1', '4ffo', 'ang1', 'das3', 'b4j5', 'd1ck', 'k0rv', 'b00b'],
             invite: true,
             code: '',
             error: false,
@@ -129,18 +145,18 @@ export default {
 
     .first{
         height: 100vh;
-        background-image: url('../assets/Adrian.jpg');
+        background-image: url('../assets/Adrian.jpeg');
         color: #FFF;
         text-shadow: 0 0 3px #000;
     }
 
     .second{
-        background-color: #e6ffff;
+        background-color: #cceeff;
         color: #808080
     }
 
     .third{
-        background-color: #e6ffff;
+        background-color: #cceeff;
     }
 
     #cupcakes {
@@ -149,23 +165,23 @@ export default {
     }
 
     .fourth{
-        background-color: #e6ffff;
+        background-color: #cceeff;
         color: #808080
     }
 
-    .fifth{
-        background-color: #e6ffff;
+    .fifth, .sixth, .seventh{
+        background-color: #cceeff;
         color: #808080
     }
 
-    .sixth{
+    .eight{
         background-color: #ffffff;
         color: #808080
     }
 
     .response {
         height: 100vh;
-        background-color: #e6ffff;
+        background-color: #cceeff;
         color: #808080
     }
 </style>

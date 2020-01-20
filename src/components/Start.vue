@@ -76,6 +76,10 @@
                             <input type="checkbox" class="form-check-input" id="fika" name="fika">
                             <label class="form-check-label" for="fika">Vi kommer till fikat</label>
                         </div>
+                        <div class="form-group form-check col-4 mx-auto">
+                                <input type="checkbox" class="form-check-input" id="inget" name="inget">
+                                <label class="form-check-label" for="inget">Tyvärr, vi kan inte komma</label>
+                            </div>
                         <div class="col-4 mx-auto">
                             <button type="submit" class="btn btn-outline-secondary btn-block" v-on:click="submit">Skicka</button>
                         </div>

@@ -86,11 +86,11 @@
                         </div>
                         <div class="form-group form-check col-8 mx-auto">
                             <input type="checkbox" class="form-check-input" id="dopochfika" name="dopochfika">
-                            <label class="form-check-label" for="dopochfika">Vi kommer till dopet och fikay</label>
+                            <label class="form-check-label" for="dopochfika">Vi kommer till dopet och fikat</label>
                         </div>
                         <div class="form-group form-check col-8 mx-auto">
                             <input type="checkbox" class="form-check-input" id="dop" name="dop">
-                            <label class="form-check-label" for="dop">Vi bara till dopet</label>
+                            <label class="form-check-label" for="dop">Vi kommer bara till dopet</label>
                         </div>
                         <div class="form-group form-check col-8 mx-auto">
                                 <input type="checkbox" class="form-check-input" id="inget" name="inget">
